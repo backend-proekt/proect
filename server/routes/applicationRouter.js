@@ -1,10 +1,12 @@
 const Router = require('express')
 const router = new Router()
+const applicationController = require('../controllers/applicationController')
 
 
-router.post('/',)
-router.get('/',)
-router.delete('/',)
+router.post('/', applicationController.create)
+router.get('/', applicationController.getAll)
+router.delete('/', applicationController.delete)
+
 
 
 

@@ -17,9 +17,6 @@ app.use('/api', router)
 // Обработка ошибок, последний Middleware
 app.use(errorHandler)
 
-app.get('/', (req, res) => {
-    res.status(200).json({message: 'WORKING!!!'})
-})
 
 const start = async () => {
     try {
