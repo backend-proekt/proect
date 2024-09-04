@@ -1,5 +1,6 @@
 const {Application} = require('../models/models')
 const ApiError = require('../error/ApiError')
+
 class ApplicationController
 {
     async create(req, res) 

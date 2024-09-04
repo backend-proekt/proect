@@ -1,5 +1,6 @@
-
+const {User} = require('../models/models')
 const ApiError = require('../error/ApiError')
+
 class UserController
 {
     async registration(req, res) 
@@ -22,10 +23,7 @@ class UserController
         res.json(id)
     }
 
-    async delete(req, res) 
-    {
 
-    }
 }
 
 module.exports = new UserController()
